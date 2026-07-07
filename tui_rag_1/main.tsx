@@ -23,30 +23,6 @@ const ragSearch = tool({
     return resp; 
   },
 });
-/*
-const todoAdd = tool({
-  description: 'TODO(やる事) を登録する',
-  inputSchema: z.object({
-    title: z.string().min(1, { message: 'タイトルは必須です' }),
-  }),
-  execute: async ({ title }) => {
-    const lib = koffi.load('./sample.dll');
-    const todo_add = lib.func('int todo_add(const char* input)');
-    const ret = todo_add(title); 
-    return `TODO add : ${title}`; 
-  },
-});
-const todoList = tool({
-  description: 'TODO一覧を取得する',
-  inputSchema: z.object({}),
-  execute: async () => {
-    const lib = koffi.load('./sample.dll');
-    const todo_list = lib.func('char* todo_list()');
-    const resp = todo_list();
-    return resp; 
-  },
-});
-*/
 
 const start_str = `Welcome
 Chat app Example
